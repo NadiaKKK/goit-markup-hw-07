@@ -1,0 +1,29 @@
+.address ul {
+  font-style: normal;
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address .city {
+  color: #ffffff;
+}
+
+.address .link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-info-item {
+  margin-bottom: 9px;
+}
+
+.footer-info-item .link:hover,
+.footer-info-item .link:focus {
+  color: var(--accent-color);
+}

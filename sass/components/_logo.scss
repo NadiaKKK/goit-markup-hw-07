@@ -1,0 +1,19 @@
+.logo {
+  font-family: Raleway, san-serif;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.page-header__logo {
+  color: #000000;
+}
+
+.page-footer__logo {
+  color: #ffffff;
+  display: inline-block;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,32 @@
+// .
+.button__close {
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0;
+  width: 30px;
+  height: 30px;
+
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__close:hover {
+  background-color: var(--accent-color);
+}
+
+.button__close-icon {
+  width: 18px;
+  height: 18px;
+}
