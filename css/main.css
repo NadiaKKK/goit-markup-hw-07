@@ -62,7 +62,7 @@ img {
   padding: 10px 32px;
 }
 
-.button__close {
+.button-close {
   cursor: pointer;
   position: absolute;
   top: 8px;
@@ -81,11 +81,11 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button__close:hover {
+.button-close:hover {
   background-color: var(--accent-color);
 }
 
-.button__close-icon {
+.button-close__icon {
   width: 18px;
   height: 18px;
 }
@@ -288,7 +288,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.address ul {
+.address {
   font-style: normal;
   list-style-type: none;
   font-weight: 400;
@@ -296,11 +296,11 @@ img {
   line-height: 1.71;
 }
 
-.address .city {
+.address-city {
   color: #ffffff;
 }
 
-.address .link {
+.address__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
@@ -308,12 +308,12 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-info-item {
+.address__item {
   margin-bottom: 9px;
 }
 
-.footer-info-item .link:hover,
-.footer-info-item .link:focus {
+.address__item .address__link:hover,
+.address__item .address__link:focus {
   color: var(--accent-color);
 }
 

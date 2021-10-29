@@ -1,4 +1,4 @@
-.address ul {
+.address {
   font-style: normal;
   list-style-type: none;
   font-weight: 400;
@@ -6,11 +6,11 @@
   line-height: 1.71;
 }
 
-.address .city {
+.address-city {
   color: #ffffff;
 }
 
-.address .link {
+.address__link {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
 
@@ -19,11 +19,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-info-item {
+.address__item {
   margin-bottom: 9px;
 }
 
-.footer-info-item .link:hover,
-.footer-info-item .link:focus {
+.address__item .address__link:hover,
+.address__item .address__link:focus {
   color: var(--accent-color);
 }
