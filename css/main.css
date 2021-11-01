@@ -6,6 +6,18 @@
   --card-set-gap: 30px;
 }
 
+.button-close, .checkbox__label, .checkbox__icon, .social-links, .social-link, .feature__img, .img__description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-button, .site-nav__link, .address__link, .form__input, .input__img, .social-link, .social-link:focus,
+.social-link:hover, .card-overlay, .client {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 h1,
 h2,
 h3,
@@ -68,9 +80,6 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0;
   width: 30px;
   height: 30px;
@@ -102,14 +111,12 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  letter-spacing: 0 3em;
   text-align: center;
-  letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--secondary-text-color);
   background-color: var(--secondary-bg-color);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-button:focus,
@@ -195,11 +202,11 @@ img {
   display: flex;
   align-items: center;
   color: var(--primary-text-color);
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -254,8 +261,6 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav__link:hover,
@@ -306,8 +311,6 @@ img {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__item {
@@ -330,11 +333,11 @@ img {
 
 .form__title {
   color: #000000;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 20px;
   line-height: 1.15;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 12px;
 }
 
@@ -357,8 +360,6 @@ img {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition-property: border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__label {
@@ -375,8 +376,6 @@ img {
   width: 18px;
   height: 18px;
   transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form__input:focus,
@@ -405,9 +404,6 @@ img {
 .checkbox__label {
   margin-top: 20px;
   margin-bottom: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -420,9 +416,6 @@ img {
 }
 
 .checkbox__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   border: 2px solid black;
   border-radius: 2px;
   width: 16px;
@@ -441,22 +434,14 @@ img {
 }
 
 .social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: 16px;
 }
 
 .social-link {
-  display: flex;
   height: 44px;
   width: 44px;
   border-radius: 50px;
-  justify-content: center;
-  align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon {
@@ -469,8 +454,6 @@ img {
 .social-link:hover {
   background-color: var(--accent-color);
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus svg,
@@ -529,8 +512,6 @@ img {
   color: #fff;
   background-color: rgba(33, 150, 243, 0.9);
   transition-property: transform;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transform: translateY(100%);
 }
 
@@ -566,16 +547,11 @@ img {
 }
 
 .social-link {
-  display: flex;
   height: 44px;
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  justify-content: center;
-  align-items: center;
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:focus,
@@ -713,14 +689,11 @@ img {
 }
 
 .feature__img {
-  display: flex;
   background-color: var(--secondary-bg-color);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
 }
 
 .work__examples {
@@ -739,18 +712,15 @@ img {
 }
 
 .img__description {
-  display: flex;
   position: absolute;
   bottom: 0;
   color: #e5e5e5;
-  font-weight: bold;
+  font-weight: 900;
   font-size: 14px;
-  line-height: 1, 14;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -769,8 +739,6 @@ img {
   justify-content: center;
   align-items: center;
   transition-property: border-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients .item + .item {

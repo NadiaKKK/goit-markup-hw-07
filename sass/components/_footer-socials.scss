@@ -5,17 +5,15 @@
   display: flex;
 }
 .social-link {
-  display: flex;
+  @extend %align-items;
+
   height: 44px;
   width: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50px;
-  justify-content: center;
-  align-items: center;
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-time;
 }
 
 .social-link:focus,

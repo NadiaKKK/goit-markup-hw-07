@@ -4,9 +4,7 @@
   top: 8px;
   right: 8px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-items;
 
   padding: 0;
   width: 30px;

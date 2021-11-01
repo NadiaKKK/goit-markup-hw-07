@@ -47,12 +47,10 @@
 }
 
 .feature__img {
-  display: flex;
+  @extend %align-items;
   background-color: var(--secondary-bg-color);
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  justify-content: center;
-  align-items: center;
 }

@@ -1,21 +1,16 @@
 .social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-items;
   margin-top: 16px;
 }
 
 .social-link {
-  display: flex;
+  @extend %align-items;
   height: 44px;
   width: 44px;
   border-radius: 50px;
-  justify-content: center;
-  align-items: center;
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-time;
 }
 
 .socials-icon {
@@ -29,8 +24,7 @@
   background-color: var(--accent-color);
 
   transition-property: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-time;
 }
 
 .social-link:focus svg,

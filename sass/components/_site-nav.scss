@@ -34,8 +34,7 @@
   @include font(500, 14px, 1.14, 0.02em);
 
   transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @extend %transition-time;
 }
 
 .site-nav__link:hover,
