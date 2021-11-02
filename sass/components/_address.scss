@@ -19,9 +19,9 @@
 
 .address__item {
   margin-bottom: 9px;
-}
 
-.address__item .address__link:hover,
-.address__item .address__link:focus {
-  color: var(--accent-color);
+  & .address__link:hover,
+  &.address__link:focus {
+    color: var(--accent-color);
+  }
 }

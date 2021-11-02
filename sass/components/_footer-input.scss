@@ -11,16 +11,16 @@
   background-color: transparent;
   transition-property: border;
   @extend %transition-time;
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    outline: transparent;
+  }
 }
+
 .icon-telegram {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-
-.footer-input:focus,
-.footer-input:hover {
-  border: 1px solid #2196f3;
-  cursor: pointer;
-  outline: transparent;
 }

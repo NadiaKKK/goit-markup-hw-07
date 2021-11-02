@@ -7,14 +7,16 @@
 
 .form__field {
   position: relative;
-
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: stretch;
-
   width: 100%;
   margin-bottom: 10px;
+  &:hover,
+  &:focus-within {
+    fill: var(--accent-color);
+  }
 }
 
 .form__input {
@@ -27,6 +29,12 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   transition-property: border;
   @extend %transition-time;
+  &:focus,
+  &:hover {
+    border: 1px solid #2196f3;
+    cursor: pointer;
+    outline: transparent;
+  }
 }
 
 .form__label {
@@ -35,28 +43,15 @@
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 .input__img {
   position: absolute;
   left: 15px;
   top: 29px;
-
   width: 18px;
   height: 18px;
-
   transition-property: fill;
   @extend %transition-time;
-}
-
-.form__input:focus,
-.form__input:hover {
-  border: 1px solid #2196f3;
-  cursor: pointer;
-  outline: transparent;
-}
-
-.form__field:hover,
-.form__field:focus-within {
-  fill: var(--accent-color);
 }
 
 .checkbox {
@@ -74,7 +69,6 @@
   margin-top: 20px;
   margin-bottom: 30px;
   @extend %align-items;
-
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

@@ -22,24 +22,18 @@
 
 .site-nav__link {
   position: relative;
-
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
   color: #212121;
-
   text-decoration: none;
-
   @include font(500, 14px, 1.14, 0.02em);
-
   transition-property: color;
   @extend %transition-time;
-}
-
-.site-nav__link:hover,
-.site-nav__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .site-nav__link--current {

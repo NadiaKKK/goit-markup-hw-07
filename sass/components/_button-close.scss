@@ -16,10 +16,10 @@
 
   transition-property: background-color;
   @extend %transition-time;
-}
 
-.button-close:hover {
-  background-color: var(--accent-color);
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 
 .button-close__icon {
