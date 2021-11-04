@@ -1,9 +1,9 @@
-.work__examples {
+.work {
   display: flex;
   margin-left: -30px;
 }
 
-.work__img {
+.work__item {
   flex-basis: calc((100% - 3 * 30px) / 3);
   margin-left: 30px;
 }

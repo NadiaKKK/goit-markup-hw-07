@@ -1,5 +1,8 @@
 .clients {
   display: flex;
+  & .clients__item + .clients__item {
+    margin-left: 30px;
+  }
 }
 
 .client {
@@ -16,10 +19,6 @@
   &:hover {
     border-color: var(--accent-color);
   }
-}
-
-.clients .item + .item {
-  margin-left: 30px;
 }
 
 .client-logo {
